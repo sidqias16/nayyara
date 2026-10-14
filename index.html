@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayyara Wedding Organizer - Wujudkan Pernikahan Impianmu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbf7; /* Soft cream/white background */
+            color: #333;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-primary {
+            background-color: #d4af37; /* Elegant gold */
+        }
+        .text-primary {
+            color: #d4af37;
+        }
+        .bg-secondary {
+            background-color: #fdf1f4; /* Soft pink */
+        }
+        .border-primary {
+            border-color: #d4af37;
+        }
+        .hero-pattern {
+            background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Beautiful wedding setup */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="image_5b85bf.png" alt="Nayyara Logo" class="h-12 w-auto object-contain rounded" onerror="this.src='https://placehold.co/100x50/fdf1f4/d4af37?text=Nayyara'">
+                    <span class="brand-font font-bold text-2xl text-gray-900 tracking-wide">Nayyara<span class="text-primary">.</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Beranda</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Tentang Kami</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Layanan</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Ulasan</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-yellow-600 transition-colors text-sm font-medium shadow-md">Hubungi Kami</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Beranda</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Tentang Kami</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Layanan</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Ulasan</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-primary font-bold">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-pattern h-screen min-h-[600px] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 overlay"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <p class="text-white text-sm md:text-base tracking-[0.2em] uppercase mb-4 font-light">We Completed Your Love</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">Wujudkan Pernikahan Impian Anda Bersama <span class="text-primary italic">Nayyara</span></h1>
+            <p class="text-gray-200 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto drop-shadow-md">Perencana pernikahan terpercaya di Jawa Barat. Kami merancang setiap detail dengan cinta dan dedikasi untuk hari bahagia Anda.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-primary text-white px-8 py-3.5 rounded-full hover:bg-yellow-600 transition-colors text-base font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">Konsultasi Gratis</a>
+                <a href="#services" class="bg-white/10 backdrop-blur-sm border border-white/50 text-white px-8 py-3.5 rounded-full hover:bg-white/20 transition-colors text-base font-medium">Lihat Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Banner -->
+    <div class="bg-primary text-white py-4 relative z-20 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+            <div class="flex items-center gap-2">
+                <div class="flex text-yellow-300">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <span class="font-semibold">5.0</span>
+                <span class="text-white/80">Rating di Google</span>
+            </div>
+            <span class="hidden md:inline text-white/50">|</span>
+            <span class="text-sm md:text-base font-medium">✨ Perencana Pernikahan Terkemuka di Jawa Barat</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding Planner in action" class="rounded-tl-[4rem] rounded-br-[4rem] shadow-2xl object-cover h-[500px] w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-secondary p-6 rounded-tl-[2rem] rounded-br-[2rem] shadow-lg border border-white">
+                            <p class="brand-font text-3xl font-bold text-gray-900 mb-1">We Completed</p>
+                            <p class="text-primary font-medium">Your Love</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">Tentang Nayyara</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6 leading-tight">Menciptakan Momen Abadi untuk Kisah Cinta Anda</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Nayyara Wedding Organizer adalah tim profesional yang berbasis di Cirebon, Jawa Barat, didedikasikan untuk mewujudkan pernikahan impian Anda menjadi kenyataan. Kami memahami bahwa setiap pasangan memiliki cerita unik, dan kami siap merancang perayaan yang merefleksikan kepribadian Anda.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Dengan pengalaman dan jaringan vendor terbaik, dari Wedding Organizer, Event Organizer hingga Talent Management, kami menjamin kelancaran acara Anda dari persiapan awal hingga hari H.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-gray-900 text-xl">5.0</h4>
+                            <p class="text-sm text-gray-500">Google Reviews</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-gray-900 text-xl">Terbaik</h4>
+                            <p class="text-sm text-gray-500">di Jawa Barat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-secondary/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Layanan Komprehensif untuk Hari Spesial Anda</h2>
+                <p class="text-gray-600">Kami menawarkan berbagai paket layanan yang dapat disesuaikan dengan kebutuhan dan anggaran Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Wedding Organizer</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Perencanaan menyeluruh dari konsep, pemilihan vendor, manajemen anggaran, hingga koordinasi di hari H pernikahan.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Terpopuler</div>
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Event Organizer</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Pengelolaan acara spesial lainnya seperti lamaran, pengajian, siraman, hingga resepsi skala besar dengan presisi tinggi.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Talent Management</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Penyediaan MC profesional, band/entertainment, usher, dan berbagai talent pendukung untuk memeriahkan acara Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Ulasan Klien</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Apa Kata Mereka Tentang Kami</h2>
+                <div class="flex justify-center items-center gap-2 mb-4">
+                    <span class="font-bold text-2xl">5.0</span>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                </div>
+                <p class="text-gray-500 text-sm">Berdasarkan ulasan di Google</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-secondary/20 p-8 rounded-2xl relative">
+                    <svg class="absolute top-6 right-6 w-8 h-8 text-primary/20" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/></svg>
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Sangat profesional dan detail. Semua request kami diakomodir dengan baik. Hari H berjalan sangat lancar tanpa kendala. Terima kasih Nayyara!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-bold text-gray-500">A</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">Anisa & Rizky</h4>
+                            <span class="text-xs text-gray-500">Klien Pernikahan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-secondary/20 p-8 rounded-2xl relative">
+                    <svg class="absolute top-6 right-6 w-8 h-8 text-primary/20" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/></svg>
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"WO terbaik di Cirebon! Timnya sangat sigap dan ramah. Keluarga besar sangat puas dengan pelayanannya."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-bold text-gray-500">D</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">Dinda & Budi</h4>
+                            <span class="text-xs text-gray-500">Klien Pernikahan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-secondary/20 p-8 rounded-2xl relative md:col-span-2 lg:col-span-1">
+                    <svg class="absolute top-6 right-6 w-8 h-8 text-primary/20" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/></svg>
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Sangat merekomendasikan Nayyara! Manajemen waktunya bagus, vendor yang dipilihkan juga berkualitas. Sangat membantu kami yang sibuk bekerja."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-bold text-gray-500">S</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">Siti & Agung</h4>
+                            <span class="text-xs text-gray-500">Klien Pernikahan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://www.google.com/search?q=Nayyara+Wedding+Organizer+Cirebon" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary hover:text-yellow-700 font-medium transition-colors">
+                    Lihat semua ulasan di Google
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-900 text-white relative">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/floral-motif.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">Hubungi Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 brand-font">Mari Bicarakan Rencana Bahagia Anda</h2>
+                    <p class="text-gray-400 mb-10">Kami siap membantu Anda merencanakan setiap detail. Kunjungi kantor kami atau hubungi via telepon untuk konsultasi awal.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Alamat Kantor</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    Perumahan Kedawung Regency 3,<br>
+                                    Jl. Sultan Ageng Tirtayasa Blok H1, Cempaka,<br>
+                                    Kec. Kedawung, Kabupaten Cirebon,<br>
+                                    Jawa Barat 45153
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Telepon / WhatsApp</h4>
+                                <a href="tel:08112136333" class="text-gray-400 hover:text-primary transition-colors text-lg">0811-2136-333</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Jam Operasional</h4>
+                                <p class="text-gray-400 text-sm">Buka Setiap Hari: Pukul 10.00 - Selesai<br><span class="text-xs text-gray-500">(Sesuai janji temu)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simple Map Placeholder / Contact Box -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl text-gray-800 flex flex-col justify-center items-center text-center">
+                    <img src="image_5b85bf.png" alt="Nayyara Logo Plaque" class="rounded-xl shadow-md mb-6 w-full max-w-sm object-cover" onerror="this.style.display='none'">
+                    <h3 class="brand-font text-2xl font-bold mb-4">Mulai Perjalanan Anda</h3>
+                    <p class="text-gray-600 mb-8 text-sm">Hubungi kami melalui WhatsApp untuk respon yang lebih cepat dan atur jadwal pertemuan dengan tim perencana kami.</p>
+                    <a href="https://wa.me/628112136333" target="_blank" rel="noopener noreferrer" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-xl font-medium transition-colors flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2024 Nayyara Wedding Organizer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
