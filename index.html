@@ -151,9 +151,9 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 <div class="lg:w-1/2">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding Planner in action" class="rounded-tl-[4rem] rounded-br-[4rem] shadow-2xl object-cover h-[500px] w-full">
@@ -188,9 +188,9 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-secondary/30">
+    <section id="services" class="py-16 md:py-24 bg-secondary/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                 <span class="text-primary font-semibold tracking-wider uppercase text-sm">Layanan Kami</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Layanan Komprehensif untuk Hari Spesial Anda</h2>
                 <p class="text-gray-600">Kami menawarkan berbagai paket layanan yang dapat disesuaikan dengan kebutuhan dan anggaran Anda.</p>
@@ -229,9 +229,9 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-24 bg-white">
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                 <span class="text-primary font-semibold tracking-wider uppercase text-sm">Ulasan Klien</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Apa Kata Mereka Tentang Kami</h2>
                 <div class="flex justify-center items-center gap-2 mb-4">
@@ -307,10 +307,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gray-900 text-white relative">
+    <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white relative">
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/floral-motif.png')]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
                 <div>
                     <span class="text-primary font-semibold tracking-wider uppercase text-sm">Hubungi Kami</span>
                     <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 brand-font">Mari Bicarakan Rencana Bahagia Anda</h2>
@@ -358,11 +358,11 @@
                 </div>
 
                 <!-- Formulir Pertanyaan Layanan -->
-                <div class="bg-white rounded-2xl p-8 shadow-xl text-gray-800">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl text-gray-800">
                     <h3 class="brand-font text-2xl font-bold mb-2">Formulir Pertanyaan Layanan</h3>
-                    <p class="text-gray-600 mb-6 text-sm">Silakan lengkapi form di bawah ini, tim perencana kami akan segera menghubungi Anda untuk konsultasi.</p>
+                    <p class="text-gray-600 mb-6 text-sm">Silakan lengkapi form di bawah ini untuk terhubung langsung dengan tim kami via WhatsApp.</p>
                     
-                    <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('form-success-msg').classList.remove('hidden'); this.reset();">
+                    <form id="wa-form" class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
                             <input type="text" id="name" name="name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Masukkan nama Anda" required>
@@ -380,21 +380,24 @@
                         </div>
 
                         <div>
-                            <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Rencana Tanggal Acara</label>
-                            <input type="date" id="date" name="date" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Layanan yang Diminati</label>
+                            <select id="service" name="service" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white" required>
+                                <option value="" disabled selected>Pilih Layanan...</option>
+                                <option value="Wedding Organizer">Wedding Organizer</option>
+                                <option value="Event Organizer">Event Organizer</option>
+                                <option value="Talent Management">Talent Management</option>
+                                <option value="Lainnya">Lainnya / Konsultasi Dulu</option>
+                            </select>
                         </div>
 
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Pesan / Detail Kebutuhan</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none" placeholder="Ceritakan impian pernikahan Anda..."></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none" placeholder="Ceritakan impian pernikahan Anda..." required></textarea>
                         </div>
 
-                        <div id="form-success-msg" class="hidden bg-green-50 text-green-700 p-4 rounded-lg text-sm border border-green-200">
-                            Pesan Anda berhasil dikirim! Kami akan segera menghubungi Anda.
-                        </div>
-
-                        <button type="submit" class="w-full bg-primary hover:bg-yellow-600 text-white py-3.5 rounded-xl font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                            Kirim Pesan
+                        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#128C7E] text-white py-3.5 rounded-xl font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01a1.183 1.183 0 00-.86.398c-.297.324-1.134 1.117-1.134 2.723s1.163 3.15 1.326 3.367c.164.218 2.296 3.504 5.56 4.914 1.341.579 2.115.867 3.033 1.15.753.232 1.439.199 1.98.12.605-.088 1.758-.718 2.005-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Kirim via WhatsApp
                         </button>
                     </form>
                 </div>
@@ -425,6 +428,29 @@
                 menu.classList.add('hidden');
             });
         });
+
+        // WhatsApp Form Handler
+        const waForm = document.getElementById('wa-form');
+        if (waForm) {
+            waForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const service = document.getElementById('service').value;
+                const message = document.getElementById('message').value;
+                
+                // Prepare WA Link
+                const waNumber = "6282111451490";
+                const waText = `Halo Nayyara Wedding Organizer,\n\nSaya ingin berkonsultasi mengenai layanan Anda.\n\n*Nama:* ${name}\n*Email:* ${email}\n*No. HP:* ${phone}\n*Layanan Diminati:* ${service}\n\n*Pesan / Detail Kebutuhan:*\n${message}`;
+                
+                // Redirect
+                const encodedText = encodeURIComponent(waText);
+                window.open(`https://wa.me/${waNumber}?text=${encodedText}`, '_blank');
+            });
+        }
     </script>
 </body>
 </html>
