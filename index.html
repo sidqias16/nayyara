@@ -91,7 +91,7 @@
                     <a href="#about" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Tentang Kami</a>
                     <a href="#services" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Layanan</a>
                     <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Ulasan</a>
-                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-yellow-600 transition-colors text-sm font-medium shadow-md">Hubungi Kami</a>
+                    <a href="https://api.whatsapp.com/send/?phone=6282111451496&text=Halo%2C+Nayyara+Wedding&type=phone_number&app_absent=0" target="_blank" class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-yellow-600 transition-colors text-sm font-medium shadow-md">Hubungi Kami</a>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -112,7 +112,7 @@
                 <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Tentang Kami</a>
                 <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Layanan</a>
                 <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Ulasan</a>
-                <a href="#contact" class="block px-3 py-2 text-base font-medium text-primary font-bold">Hubungi Kami</a>
+                <a href="https://api.whatsapp.com/send/?phone=6282111451496&text=Halo%2C+Nayyara+Wedding&type=phone_number&app_absent=0" target="_blank" class="block px-3 py-2 text-base font-medium text-primary font-bold">Hubungi Kami</a>
             </div>
         </div>
     </nav>
@@ -125,7 +125,7 @@
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">Wujudkan Pernikahan Impian Anda Bersama <span class="text-primary italic">Nayyara</span></h1>
             <p class="text-gray-200 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto drop-shadow-md">Perencana pernikahan terpercaya di Jawa Barat. Kami merancang setiap detail dengan cinta dan dedikasi untuk hari bahagia Anda.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-primary text-white px-8 py-3.5 rounded-full hover:bg-yellow-600 transition-colors text-base font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">Konsultasi Gratis</a>
+                <a href="https://api.whatsapp.com/send/?phone=6282111451496&text=Halo%2C+Nayyara+Wedding&type=phone_number&app_absent=0" target="_blank" class="bg-primary text-white px-8 py-3.5 rounded-full hover:bg-yellow-600 transition-colors text-base font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">Konsultasi Gratis</a>
                 <a href="#services" class="bg-white/10 backdrop-blur-sm border border-white/50 text-white px-8 py-3.5 rounded-full hover:bg-white/20 transition-colors text-base font-medium">Lihat Layanan</a>
             </div>
         </div>
@@ -339,7 +339,7 @@
                             <div>
                                 <h4 class="text-lg font-semibold mb-1">Telepon / WhatsApp</h4>
                                 <div class="flex flex-col gap-1">
-                                    <a href="tel:082111451490" class="text-gray-400 hover:text-primary transition-colors text-lg">0821-1145-1490</a>
+                                    <a href="https://api.whatsapp.com/send/?phone=6282111451496&text=Halo%2C+Nayyara+Wedding&type=phone_number&app_absent=0" target="_blank" class="text-gray-400 hover:text-primary transition-colors text-lg">0821-1145-1496</a>
                                     <a href="tel:08112437734" class="text-gray-400 hover:text-primary transition-colors text-lg">0811-2437-734</a>
                                 </div>
                             </div>
@@ -442,13 +442,12 @@
                 const service = document.getElementById('service').value;
                 const message = document.getElementById('message').value;
                 
-                // Prepare WA Link
-                const waNumber = "6282111451490";
-                const waText = `Halo Nayyara Wedding Organizer,\n\nSaya ingin berkonsultasi mengenai layanan Anda.\n\n*Nama:* ${name}\n*Email:* ${email}\n*No. HP:* ${phone}\n*Layanan Diminati:* ${service}\n\n*Pesan / Detail Kebutuhan:*\n${message}`;
+                // Prepare WA Link with dynamic form data
+                const waText = `Halo, Nayyara Wedding\n\nSaya ingin berkonsultasi mengenai layanan Anda.\n\n*Nama:* ${name}\n*Email:* ${email}\n*No. HP:* ${phone}\n*Layanan Diminati:* ${service}\n\n*Pesan / Detail Kebutuhan:*\n${message}`;
                 
-                // Redirect
+                // Redirect using the requested URL structure
                 const encodedText = encodeURIComponent(waText);
-                window.open(`https://wa.me/${waNumber}?text=${encodedText}`, '_blank');
+                window.open(`https://api.whatsapp.com/send/?phone=6282111451496&text=${encodedText}&type=phone_number&app_absent=0`, '_blank');
             });
         }
     </script>
